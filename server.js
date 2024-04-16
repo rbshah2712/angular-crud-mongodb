@@ -12,7 +12,7 @@ app.use(cors());
 
 // Replace with your MongoDB connection string
 const mongoURI = 'mongodb+srv://rsanghvi2712:Raj2712@cluster0.owsw8yh.mongodb.net/';
-mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(mongoURI, { useNewUrlParser: true})
   .then(() => console.log('MongoDB database connected'))
   .catch(err => console.error(err));
 
